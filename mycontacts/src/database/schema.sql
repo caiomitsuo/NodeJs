@@ -14,4 +14,5 @@ CREATE TABLE IF NOT EXISTS categories (
   email VARCHAR UNIQUE,
   phone VARCHAR,
   category_id UUID,
+  FOREIGN KEY(category_id) REFERENCES categories(id)
 );
